@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Fighting Game!</title>
+
+    <link rel="stylesheet" type="text.css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text.css" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>FIGHTING GAME</h1>
+    </header>
+
+    <div class="container" id="main-block">
+        <div id="char-select">
+            <h2>SELECT A FIGHTER</h2>
+            <div id="select-img"></div>
+            <img id="beaver" src="" alt="potential char-1" width="100px">
+            <img id="cat" src="" alt="potential char-2" width="100px">
+            <img id="snake" src="" alt="potential char-3" width="100px">
+            <img id="goat" src="" alt="potential char-4" width="100px"> 
+        </div>
+        <div id="active-char">
+            <h2>YOUR FIGHTER</h1>
+            <img id="you" src="" alt="your character" width="200px">
+            <p id="your-health"></p>
+        </div>
+        <div id="opp-select">
+            <h2>SELECT AN OPPONENT</h2>
+            <img id="opp-1" src="" alt="potential opponent-1" width="100px">
+            <img id="opp-2" src="" alt="potential opponent-2" width="100px">
+            <img id="opp-3" src="" alt="potential opponent-3" width="100px">
+        </div>
+        <div id="attack-section">
+                <button id="attack" type="button" class="btn btn-secondary btn-lg btn-block">ATTACK</button>
+        </div>
+        <div id="active-opp">
+            <h2>YOUR OPPONENT</h2>
+            <img id="opp" src="" alt="your opponent's character" width="200px">
+            <p id="opp-health"></p>
+        </div>
+        <div class="container" id="wins-losses">
+            <p id="wins"></p>
+            <p id="losses"></p>
+        </div>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="assets/script/game.js"></script>
+</body>
+
+</html>
