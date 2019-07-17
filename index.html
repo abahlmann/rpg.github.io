@@ -6,54 +6,100 @@
 
     <title>Fighting Game!</title>
 
-    <link rel="stylesheet" type="text.css" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text.css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
+        <div class="row">
         <h1>FIGHTING GAME</h1>
+    </div>
     </header>
 
     <div class="container" id="main-block">
+            <div class="container flex-box" id="wins-losses">
+                    <p id="wins"></p>
+                    <p id="losses"></p>
+                </div>
         <div id="char-select">
             <h2>SELECT A FIGHTER</h2>
-            <div id="select-img"></div>
-            <img id="beaver" src="" alt="potential char-1" width="100px">
-            <img id="cat" src="" alt="potential char-2" width="100px">
-            <img id="snake" src="" alt="potential char-3" width="100px">
-            <img id="goat" src="" alt="potential char-4" width="100px"> 
+            <div class="flex-box img-select">
+                <div class="stat-box">
+                    <figure class="select-img">
+                    <img id="beaver" src="" alt="potential char-1" width="100px">
+                </figure>
+                    <div id="beaver-stats"></div>
+                </div>
+
+                <div class="stat-box">
+                        <figure class="select-img">
+                    <img id="cat" src="" alt="potential char-2" width="100px">
+                    </figure>
+                    <div id="cat-stats"></div>
+                </div>
+
+                <div class="stat-box">
+                        <figure class="select-img">
+                    <img id="snake" src="" alt="potential char-3" width="100px">
+                    </figure>
+                    <div id="snake-stats"></div>
+
+                </div>
+
+                <div class="stat-box">
+                        <figure class="select-img">
+                    <img class="select-img" id="goat" src="" alt="potential char-4" width="100px">
+                    </figure>
+                    <div id="goat-stats"></div>
+                </div>
+            </div>
         </div>
-        <div id="active-char">
+        <div id="active-char" class="row">
             <h2>YOUR FIGHTER</h1>
-            <img id="you" src="" alt="your character" width="200px">
-            <p id="your-health"></p>
+                <img id="you" src="" alt="your character" width="200px">
+                <p id="your-health"></p>
         </div>
-        <div id="opp-select">
+        <div id="opp-select" class="row">
             <h2>SELECT AN OPPONENT</h2>
-            <img id="opp-1" src="" alt="potential opponent-1" width="100px">
-            <img id="opp-2" src="" alt="potential opponent-2" width="100px">
-            <img id="opp-3" src="" alt="potential opponent-3" width="100px">
+            <div class="flex-box">
+                <div class="stat-box">
+                        <figure class="select-img">
+                    <img id="opp-1" src="" alt="potential opponent-1" width="100px">
+                    </figure>
+                    <div id="opp1-stats"></div>
+                </div>
+
+                <div class="stat-box">
+                        <figure class="select-img">
+                    <img id="opp-2" src="" alt="potential opponent-2" width="100px">
+                    </figure>
+                    <div id="opp2-stats"></div>
+                </div>
+
+                <div class="stat-box">
+                        <figure class="select-img">
+                    <img id="opp-3" src="" alt="potential opponent-3" width="100px">
+                    </figure>
+                    <div id="opp3-stats"></div>
+                </div>
+            </div>
+            <!--potential opp box-->
         </div>
-        <div id="attack-section">
-                <button id="attack" type="button" class="btn btn-secondary btn-lg btn-block">ATTACK</button>
+        <div id="attack-section" class="row">
+            <button id="attack" type="button" class="btn btn-secondary btn-lg btn-block">ATTACK</button>
         </div>
-        <div id="active-opp">
+        <div id="active-opp" class="row">
             <h2>YOUR OPPONENT</h2>
             <img id="opp" src="" alt="your opponent's character" width="200px">
             <p id="opp-health"></p>
         </div>
-        <div class="container" id="wins-losses">
-            <p id="wins"></p>
-            <p id="losses"></p>
-        </div>
     </div>
 
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.min.js"
-    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="assets/script/game.js"></script>
 </body>
 

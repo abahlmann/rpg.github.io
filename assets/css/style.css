@@ -1,0 +1,54 @@
+.flex-box{
+    display:flex-row;
+    justify-content: space-around;
+}
+
+header{
+    /* position:fixed; */
+    padding:0.5in 1.25in;
+    background-color:aqua;
+    border-bottom:aquamarine;
+    width:100%;
+    text-align: center;
+    display:flex-row;
+    justify-content: space-between;
+}
+h1{
+    display:block;
+}
+
+.container{
+    text-align:center;
+    margin:.5in;
+    border:solid 2px aquamarine;
+    border-radius:4px;
+    background-color:azure;
+    padding:1in;
+    padding-top:0;
+}
+#wins-losses{
+    padding:1px;
+    padding-top:15px;
+    border:solid 4px aquamarine;
+    background-color: aquamarine;
+    width:100%;
+}
+#wins,#losses{
+    padding:1px;
+}
+.stat-box{
+    display:inline-block;
+    border:solid 4px aquamarine;
+    padding:10px;
+    width:200px;
+    height:250px;
+    margin:0;
+}
+.select-img{
+    height:100px;
+}
+.select-img:hover{
+    cursor:pointer;
+    padding:10px;
+    background-color:white;
+}
